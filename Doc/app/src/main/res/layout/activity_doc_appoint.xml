@@ -7,12 +7,12 @@
     tools:context=".doc_appoint">
 
     <RelativeLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".doc_appoint">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".doc_appoint">
 
 
     <ImageView
@@ -24,72 +24,72 @@
         android:paddingRight="-50dp"
         android:paddingLeft="-50dp"/>
 
-        <TextView
-            android:id="@+id/docName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="10dp"
-            android:layout_toRightOf="@id/img"
-            android:textSize="18dp"
-            android:text="Dr.Mohan Karthik"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
-            android:textColor="#000000"
-            />
+    <TextView
+        android:id="@+id/docName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/img"
+        android:textSize="18dp"
+        android:text="Dr.Mohan Karthik"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+        android:textColor="#000000"
+        />
 
-        <TextView
-            android:id="@+id/Specialist"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/docName"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="5dp"
-            android:layout_toRightOf="@id/img"
-            android:text="Dentist"
-            android:textSize="16dp"
-            android:textColor="#B71C1C"
-            android:textStyle="bold"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+    <TextView
+        android:id="@+id/Specialist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/docName"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/img"
+        android:text="Dentist"
+        android:textSize="16dp"
+        android:textColor="#B71C1C"
+        android:textStyle="bold"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
 
-        <TextView
-            android:id="@+id/Hospital"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/Specialist"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="5dp"
-            android:layout_toRightOf="@id/img"
-            android:background="@color/colorPrimary"
-            android:paddingLeft="15dp"
-            android:paddingRight="15dp"
-            android:textColor="#FFFFFF"
-            android:text="K.G     Hospital"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
-            android:textStyle="bold" />
+    <TextView
+        android:id="@+id/Hospital"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Specialist"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/img"
+        android:background="@color/colorPrimary"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textColor="#FFFFFF"
+        android:text="K.G     Hospital"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
+        android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/Fee"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/Hospital"
-            android:layout_marginLeft="100dp"
-            android:layout_marginTop="5dp"
-            android:layout_toRightOf="@id/City"
-            android:text="Fee: ₹200"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
-            android:textStyle="bold" />
+    <TextView
+        android:id="@+id/Fee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Hospital"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/City"
+        android:text="Fee: ₹200"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+        android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/City"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/Hospital"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="5dp"
-            android:layout_toRightOf="@id/img"
-            android:text="Coimbatore"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
-            android:textStyle="bold" />
+    <TextView
+        android:id="@+id/City"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Hospital"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/img"
+        android:text="Coimbatore"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+        android:textStyle="bold" />
 
 
     <TextView
@@ -102,35 +102,35 @@
         android:layout_marginTop="20dp"/>
 
 
-        <TextView
-            android:id="@+id/currentdate"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/date"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:text=""/>
+    <TextView
+        android:id="@+id/currentdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/date"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text=""/>
 
 
-        <Button
-            android:id="@+id/button"
-            android:layout_below="@+id/currentdate"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Pick a Date"
-            android:layout_margin="10dp"/>
+    <Button
+        android:id="@+id/button"
+        android:layout_below="@+id/currentdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pick a Date"
+        android:layout_margin="10dp"/>
 
-        <TextView
-            android:id="@+id/time"
-            android:layout_below="@+id/button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Timings:"
-            android:layout_marginTop="15dp"
-            android:layout_marginLeft="20dp"/>
+    <TextView
+        android:id="@+id/time"
+        android:layout_below="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Timings:"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"/>
 
-        <TextView
+    <TextView
         android:id="@+id/doc_time"
         android:layout_below="@+id/time"
         android:layout_width="match_parent"
@@ -139,38 +139,46 @@
                                        Evening:     4:00 p.m  to  9:00 p.m"
         android:layout_marginLeft="20dp"/>
 
-        <TextView
-            android:id="@+id/p_time"
-            android:layout_below="@+id/doc_time"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Select the Time:"
-            android:layout_marginLeft="20dp"/>
+    <TextView
+        android:id="@+id/p_time"
+        android:layout_below="@+id/doc_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select the Time:"
+        android:layout_marginLeft="20dp"/>
 
-        <TextView
-            android:id="@+id/s_time"
-            android:layout_below="@+id/p_time"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text=""
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginRight="20dp"/>
+    <TextView
+        android:id="@+id/s_time"
+        android:layout_below="@+id/p_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"/>
 
-        <Button
-            android:id="@+id/b_time"
-            android:layout_below="@+id/s_time"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Pick a Time"
-            android:layout_margin="10dp"/>
+    <Button
+        android:id="@+id/b_time"
+        android:layout_below="@+id/s_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pick a Time"
+        android:layout_margin="10dp"/>
 
-        <Button
-            android:id="@+id/confirm_book"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_centerInParent="true"
-            android:text="Confirm  Apointment"/>
-    </RelativeLayout>
+    <Button
+        android:id="@+id/pharm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="pharmacy"
+        android:layout_below="@id/b_time"
+        android:layout_marginLeft="15dp"/>
+
+    <Button
+        android:id="@+id/confirm_book"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:text="Confirm  Apointment"/>
+</RelativeLayout>
 </android.support.constraint.ConstraintLayout>

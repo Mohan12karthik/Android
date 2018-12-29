@@ -7,14 +7,18 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.SearchView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements SearchView.OnQueryTextListener{
     private DrawerLayout drawerLayout;
     public RecyclerView recyclerView;
 
@@ -114,5 +118,37 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+
+//        getMenuInflater().inflate(R.menu.toolbar_menu,menu);
+//        MenuItem menuItem=menu.findItem(R.id.action_search);
+//        SearchView searchView=(SearchView) menuItem.getActionView();
+//        searchView.setOnQueryTextListener(this);
+
+        return true;
+    }
+
+    @Override
+    public boolean onQueryTextSubmit(String query) {
+        return false;
+    }
+
+    @Override
+    public boolean onQueryTextChange(String newText) {
+
+//        String userinput=newText.toLowerCase();
+//        List<doctor_details> newLists= new ArrayList<>();
+//
+//        for(doctor_details doc : doctor_detailsList){
+//            if(userinput.toLowerCase().contains(userinput)){
+//                newLists.add(doc);
+//            }
+//        }
+
+       // doctorAdapter.updateList(newLists);
+        return false;
     }
 }

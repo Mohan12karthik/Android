@@ -20,7 +20,7 @@ import java.util.Calendar;
 
 public class doc_appoint extends AppCompatActivity {
 
-    Button date,confirm_appoint,time;
+    Button date,confirm_appoint,time,pharm;
     int year_x,month_x,day_x,hour_x,minute_x;
     static final int DIALOG_ID=0;
     static final int TIME_DIALOG_ID=1;
@@ -53,9 +53,17 @@ public class doc_appoint extends AppCompatActivity {
             public void onClick(View v) {
                 Toast.makeText(doc_appoint.this,"Appointment Confirm",Toast.LENGTH_SHORT).show();
                 Intent i=new Intent(doc_appoint.this,con_appoint.class);
-//                i.putExtra("s_date",b_date);
-//                i.putExtra("s_time",b_time);
+
                 startActivity(i);
+            }
+        });
+
+        pharm=(Button)findViewById(R.id.pharm);
+        pharm.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent pharmacy = new Intent(doc_appoint.this,pharmacy.class);
+                startActivity(pharmacy);
             }
         });
 

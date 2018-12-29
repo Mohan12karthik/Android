@@ -17,7 +17,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".doc_appoint" />
-        <activity android:name=".con_appoint"></activity>
+        <activity android:name=".con_appoint" />
+        <activity android:name=".pharmacy" />
+        <activity android:name=".pharm_medicine" />
+        <activity android:name=".buy_medicine"></activity>
     </application>
 
 </manifest>

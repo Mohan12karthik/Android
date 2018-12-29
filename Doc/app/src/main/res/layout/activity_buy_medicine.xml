@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".buy_medicine">
+
+
+   <RelativeLayout
+       xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:app="http://schemas.android.com/apk/res-auto"
+       xmlns:tools="http://schemas.android.com/tools"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       tools:context=".buy_medicine">
+
+      <ImageView
+          android:id="@+id/med_img"
+          android:layout_width="wrap_content"
+          android:layout_height="100dp"
+          android:src="@drawable/crocin"
+          android:layout_marginTop="10dp"
+          />
+
+      <TextView
+          android:id="@+id/medName"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="15dp"
+          android:layout_marginTop="10dp"
+          android:layout_toRightOf="@id/med_img"
+          android:textSize="18dp"
+          android:text="Crocin Advance Tablet"
+          android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+          android:textColor="#000000"
+          />
+
+      <TextView
+          android:id="@+id/manu"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/medName"
+          android:layout_marginLeft="15dp"
+          android:layout_marginTop="5dp"
+          android:layout_toRightOf="@id/med_img"
+          android:text="Glaxosmithkline Pharmaceuticals Ltd."
+          android:textSize="16dp"
+          android:textColor="#90A4AE"
+          android:textStyle="bold"
+          android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+      <TextView
+          android:id="@+id/med_quantity"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/manu"
+          android:layout_marginLeft="15dp"
+          android:layout_marginTop="5dp"
+          android:layout_toRightOf="@id/med_img"
+          android:textColor="#B71C1C"
+          android:text="1 Strip  (10 Tablets)"
+          android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
+          android:textStyle="bold" />
+
+       <TextView
+          android:id="@+id/med_price"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="50dp"
+          android:layout_marginTop="5dp"
+           android:layout_below="@id/manu"
+          android:layout_toRightOf="@id/med_quantity"
+          android:text="₹30"
+          android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+          android:textStyle="bold" />
+
+      <View
+          android:id="@+id/view"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/view_width_small"
+          android:background="#000000"
+          android:layout_marginTop="8dp"
+          android:layout_below="@id/med_img"/>
+
+
+
+      <RelativeLayout
+          android:id="@+id/buy_relativelayout"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:layout_below="@id/view"
+          android:layout_marginTop="10dp"
+          >
+
+         <TextView
+             android:id="@+id/buy_quantity"
+             android:layout_marginTop="5dp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Quantity (number of tablets):"
+             android:layout_marginLeft="10dp"/>
+
+         <Button
+             android:id="@+id/increase"
+             android:layout_width="48dp"
+             android:layout_height="48dp"
+             android:layout_below="@id/buy_quantity"
+             android:text="+"
+             android:textSize="16sp"
+             android:layout_marginRight="8dp"
+             android:layout_marginLeft="10dp"
+             android:layout_marginBottom="16dp"
+             android:onClick="increment"
+             />
+
+         <TextView
+             android:id="@+id/quantity_text_view"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="0"
+             android:layout_toRightOf="@+id/increase"
+             android:textColor="#000000"
+             android:layout_marginTop="10dp"
+             android:layout_below="@id/buy_quantity"
+             android:textSize="16sp"
+             />
+
+
+         <Button
+             android:id="@+id/decrease"
+             android:layout_width="48dp"
+             android:layout_height="48dp"
+             android:text="-"
+             android:layout_toRightOf="@id/quantity_text_view"
+             android:textSize="16sp"
+             android:layout_marginLeft="8dp"
+             android:layout_below="@id/buy_quantity"
+             android:onClick="decrement"
+             />
+
+
+         <TextView
+             android:id="@+id/buy_price"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_toRightOf="@id/buy_quantity"
+             android:text="Price:"
+             android:layout_marginTop="5dp"
+             android:layout_marginLeft="120dp"
+             />
+
+         <TextView
+             android:id="@+id/amount"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_below="@id/buy_price"
+             android:text=""
+             android:layout_toRightOf="@+id/decrease"
+             android:layout_marginTop="18dp"
+             android:layout_marginLeft="185dp"
+             />
+
+      </RelativeLayout>
+      <View
+          android:id="@+id/view2"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/view_width_small"
+          android:background="#000000"
+          android:layout_marginTop="8dp"
+          android:layout_below="@id/buy_relativelayout"/>
+
+      <RelativeLayout
+          android:id="@+id/detail_relativelayout"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/view2"
+          android:layout_marginTop="10dp">
+
+         <TextView
+             android:id="@+id/descript"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Description:"
+             android:layout_marginLeft="18dp"/>
+
+         <TextView
+             android:id="@+id/detail_descript"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text=""
+             android:layout_below="@id/descript"
+             android:layout_marginLeft="20dp"
+             />
+
+         <TextView
+             android:id="@+id/use"
+             android:layout_below="@id/detail_descript"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="prescribtion  for:"
+             android:layout_marginLeft="18dp"/>
+
+         <TextView
+             android:id="@+id/detail_use"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text=""
+             android:layout_below="@id/use"
+             android:layout_marginLeft="20dp"
+             />
+
+      </RelativeLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="0.5"
+          android:orientation="horizontal"
+          android:weightSum="2"
+          android:elevation="30dp"
+          android:background="#000000"
+          android:layout_alignParentBottom="true">
+         <TextView android:id="@+id/text_action_bottom1"
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:layout_weight="1"
+             android:background="#FFFFFF"
+             android:text="ADD TO CART"
+             android:textSize="18dp"
+             android:textColor="#000000"
+             android:textStyle="bold"
+             android:gravity="center"/>
+
+         <TextView android:id="@+id/text_action_bottom2"
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:layout_weight="1"
+             android:background="@color/colorPrimary"
+             android:text="BUY NOW"
+             android:textSize="18dp"
+             android:textColor="#FAFAFA"
+             android:textStyle="bold"
+             android:gravity="center"/>
+      </LinearLayout>
+   </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

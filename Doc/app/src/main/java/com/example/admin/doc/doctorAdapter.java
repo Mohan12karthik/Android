@@ -12,12 +12,13 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class doctorAdapter extends RecyclerView.Adapter<doctorAdapter.doctorViewHolder>{
 
     private Context mctx;
-    private List<doctor_details> doctor_detailsList;
+    private  List<doctor_details> doctor_detailsList;
 
     public doctorAdapter(Context mctx, List<doctor_details> doctor_detailsList) {
         this.mctx = mctx;
@@ -94,5 +95,12 @@ public class doctorAdapter extends RecyclerView.Adapter<doctorAdapter.doctorView
             textViewCity=itemView.findViewById(R.id.textViewCity);
 
         }
+    }
+
+    public void updateList(List<doctor_details> newList){
+
+        doctor_detailsList = new ArrayList<>();
+        doctor_detailsList.addAll(newList);
+        notifyDataSetChanged();
     }
 }
