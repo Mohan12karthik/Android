@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ericjoseph.com.exaltproject.PatientRegistration">
+
+    <ImageView
+        android:id="@+id/doctor_image"
+        android:layout_width="123dp"
+        android:layout_height="106dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toStartOf="@+id/doctor_userid"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread_inside"
+        app:srcCompat="@drawable/load_image_icon" />
+
+    <Spinner
+        android:id="@+id/doctor_specialization"
+        android:layout_width="0dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/doctor_password"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/doctor_password"
+        app:layout_constraintTop_toBottomOf="@+id/doctor_email" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="107dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Choose Patient Blood Type"
+        app:layout_constraintBottom_toBottomOf="@+id/doctor_specialization"
+        app:layout_constraintEnd_toEndOf="@+id/doctor_image"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/doctor_city"
+        app:layout_constraintTop_toTopOf="@+id/doctor_specialization"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/student_choices_form"
+        android:layout_width="122dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="16dp"
+        android:singleLine="false"
+        android:text="Select Major Ailments"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView5"
+        app:layout_constraintHorizontal_bias="0.031"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+    <EditText
+        android:id="@+id/doctor_name"
+        android:layout_width="0dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Enter Patient Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/doctor_userid"
+        app:layout_constraintStart_toStartOf="@+id/doctor_userid"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/doctor_userid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:hint="Enter Patient User ID"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/doctor_password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/doctor_image"
+        app:layout_constraintTop_toBottomOf="@+id/doctor_name" />
+
+    <EditText
+        android:id="@+id/doctor_city"
+        android:layout_width="129dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="Patient DOB"
+        android:inputType="textPersonName"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/doctor_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/doctor_image"
+        app:layout_constraintTop_toTopOf="@+id/doctor_email"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/doctor_email"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="56dp"
+        android:ems="10"
+        android:hint="Patient Phone number"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="@+id/doctor_password"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/doctor_password"
+        app:layout_constraintTop_toBottomOf="@+id/doctor_image" />
+
+    <EditText
+        android:id="@+id/doctor_workplace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Enter Patient eMail"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/doctor_specialization"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/doctor_specialization"
+        app:layout_constraintTop_toBottomOf="@+id/doctor_specialization" />
+
+    <Spinner
+        android:id="@+id/patient_ailments_spinner"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/student_choices_form"
+        app:layout_constraintEnd_toEndOf="@+id/doctor_workplace"
+        app:layout_constraintStart_toStartOf="@+id/doctor_workplace"
+        app:layout_constraintTop_toTopOf="@+id/student_choices_form" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="16dp"
+        android:singleLine="false"
+        app:layout_constraintEnd_toEndOf="@+id/student_choices_form"
+        app:layout_constraintStart_toStartOf="@+id/student_choices_form"
+        app:layout_constraintTop_toBottomOf="@+id/doctor_workplace"
+        tools:text="Enter Patient Phone number" />
+
+    <EditText
+        android:id="@+id/patient_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:ems="10"
+        android:hint="Enter Address"
+        android:inputType="text|textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/patient_ailments_spinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/doctor_workplace"
+        app:layout_constraintTop_toBottomOf="@+id/doctor_workplace"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Register Patient"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/patient_ailments_spinner"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/student_choices_form"
+        app:layout_constraintTop_toBottomOf="@+id/patient_ailments_spinner" />
+
+    <EditText
+        android:id="@+id/doctor_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="9dp"
+        android:ems="10"
+        android:hint="Enter Patient Password"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/doctor_email"
+        app:layout_constraintEnd_toEndOf="@+id/doctor_userid"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/doctor_userid"
+        app:layout_constraintTop_toBottomOf="@+id/doctor_userid"
+        app:layout_constraintVertical_bias="0.473" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="102dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="8dp"
+        android:text="Enter Patient eMail"
+        app:layout_constraintBottom_toBottomOf="@+id/doctor_workplace"
+        app:layout_constraintEnd_toEndOf="@+id/textView21"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView21"
+        app:layout_constraintTop_toTopOf="@+id/doctor_workplace"
+        app:layout_constraintVertical_bias="0.0" />
+
+</android.support.constraint.ConstraintLayout>

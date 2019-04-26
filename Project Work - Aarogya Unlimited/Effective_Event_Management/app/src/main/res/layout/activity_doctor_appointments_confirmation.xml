@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DoctorAppointmentsConfirmation">
+
+    <EditText
+        android:id="@+id/reason_editText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        android:text=""
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/reason2"
+        app:layout_constraintEnd_toEndOf="@+id/s_time"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/s_time"
+        app:layout_constraintTop_toTopOf="@+id/reason2"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/reason2"
+        android:layout_width="108dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="28dp"
+        android:text="Enter The Reason:"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="@+id/b_time"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/b_time"
+        app:layout_constraintTop_toBottomOf="@+id/b_time" />
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="149dp"
+        android:layout_height="141dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="16dp"
+        android:paddingLeft="-50dp"
+        android:paddingRight="-50dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/doc1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/docName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/img"
+        android:text="Dr.Mohan Karthik"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.168"
+        app:layout_constraintStart_toEndOf="@+id/img"
+        app:layout_constraintTop_toTopOf="@+id/img" />
+
+    <TextView
+        android:id="@+id/Specialist"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_below="@id/docName"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/img"
+        android:text="Dentist"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+        android:textColor="#B71C1C"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/docName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/docName"
+        app:layout_constraintTop_toBottomOf="@+id/docName" />
+
+    <TextView
+        android:id="@+id/Hospital"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_below="@id/Specialist"
+        android:layout_marginTop="16dp"
+        android:layout_toRightOf="@id/img"
+        android:background="@color/colorPrimary"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="K.G Hospital"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/Specialist"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/Specialist"
+        app:layout_constraintTop_toBottomOf="@+id/City" />
+
+    <TextView
+        android:id="@+id/Fee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Hospital"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_toRightOf="@id/City"
+        android:text="Fee: ₹200"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/Hospital"
+        app:layout_constraintEnd_toEndOf="@+id/Specialist"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/Specialist"
+        app:layout_constraintTop_toBottomOf="@+id/Specialist"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/City"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Hospital"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_toRightOf="@id/img"
+        android:text="Coimbatore"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/Fee"
+        app:layout_constraintTop_toBottomOf="@+id/Fee" />
+
+    <TextView
+        android:id="@+id/currentdate"
+        android:layout_width="194dp"
+        android:layout_height="31dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginBottom="8dp"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/City"
+        app:layout_constraintTop_toTopOf="@+id/button"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Pick a Date"
+        app:layout_constraintEnd_toStartOf="@+id/currentdate"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/img"
+        app:layout_constraintTop_toBottomOf="@+id/img" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="98dp"
+        android:layout_height="39dp"
+        android:layout_below="@+id/button"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="24dp"
+        android:text="Timings:"
+        app:layout_constraintEnd_toEndOf="@+id/button"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <TextView
+        android:id="@+id/doc_time"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_below="@+id/time"
+        android:layout_alignStart="@+id/time"
+        android:layout_alignLeft="@+id/time"
+        android:layout_alignEnd="@+id/time"
+        android:layout_alignRight="@+id/time"
+        android:text="Morning: 7:00 a.m  to  2:00 pm                                    Evening: 4:00 p.m  to  9:00 p.m"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        app:layout_constraintBottom_toBottomOf="@+id/time"
+        app:layout_constraintEnd_toEndOf="@+id/currentdate"
+        app:layout_constraintStart_toStartOf="@+id/currentdate"
+        app:layout_constraintTop_toTopOf="@+id/time"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/s_time"
+        android:layout_width="0dp"
+        android:layout_height="34dp"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/b_time"
+        app:layout_constraintEnd_toEndOf="@+id/currentdate"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/currentdate"
+        app:layout_constraintTop_toTopOf="@+id/b_time" />
+
+    <Button
+        android:id="@+id/b_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/s_time"
+        android:layout_marginTop="12dp"
+        android:text="Pick a Time"
+        app:layout_constraintEnd_toEndOf="@+id/button"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/time" />
+
+    <Button
+        android:id="@+id/confirm_book"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="16dp"
+        android:text="Confirm  Apointment"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/reason_editText"
+        app:layout_constraintHorizontal_bias="0.544"
+        app:layout_constraintStart_toStartOf="@+id/reason2"
+        app:layout_constraintTop_toBottomOf="@+id/reason2"
+        app:layout_constraintVertical_bias="0.6" />
+
+</android.support.constraint.ConstraintLayout>

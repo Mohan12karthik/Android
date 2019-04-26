@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_google_signin_btn_text_light_default"
+    tools:context="ericjoseph.com.exaltproject.MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="164dp"
+        android:text="Patient Viewer"
+        android:textColor="@android:color/white"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintHorizontal_bias="0.166"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/patient_img" />
+
+    <ImageView
+        android:id="@+id/doctor_img2"
+        android:layout_width="83dp"
+        android:layout_height="75dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/org_img2"
+        app:layout_constraintEnd_toEndOf="@+id/doctor_img"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/doctor_img"
+        app:layout_constraintTop_toTopOf="@+id/org_img2"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/doctor_viewer_icon" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:text="Pharmacy Viewer"
+        android:textColor="@android:color/white"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="@+id/textView3"
+        app:layout_constraintHorizontal_bias="0.323"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toTopOf="@+id/textView2"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/org_img2"
+        android:layout_width="76dp"
+        android:layout_height="70dp"
+        android:background="@drawable/pharmacy_viewer_icon"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/patient_img2"
+        app:layout_constraintEnd_toEndOf="@+id/org_img"
+        app:layout_constraintHorizontal_bias="0.266"
+        app:layout_constraintStart_toStartOf="@+id/org_img"
+        app:layout_constraintTop_toTopOf="@+id/patient_img2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/patient_img2"
+        android:layout_width="74dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="188dp"
+        android:background="@drawable/patient_viewer_icon"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="51dp"
+        android:singleLine="false"
+        android:text="Doctor Viewer"
+        android:textColor="@android:color/white"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView9"
+        app:layout_constraintEnd_toEndOf="@+id/textView19"
+        app:layout_constraintHorizontal_bias="0.894"
+        app:layout_constraintStart_toStartOf="@+id/textView19"
+        app:layout_constraintTop_toTopOf="@+id/textView9"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/patient_img"
+        android:layout_width="74dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/patient_reg_icon"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/org_img"
+        android:layout_width="76dp"
+        android:layout_height="70dp"
+        android:background="@drawable/pharmacy_reg_icon"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/patient_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.236"
+        app:layout_constraintStart_toEndOf="@+id/patient_img"
+        app:layout_constraintTop_toTopOf="@+id/patient_img"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/transport_img"
+        android:layout_width="77dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="28dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="@+id/patient_img"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/patient_img"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/medicine_reg_icon" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="98dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:text="Patient Registration"
+        android:textColor="@android:color/white"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="@+id/patient_img"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="@+id/patient_img"
+        app:layout_constraintTop_toBottomOf="@+id/patient_img" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="110dp"
+        android:layout_height="48dp"
+        android:text="Pharmacy Registration"
+        android:textColor="@android:color/white"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="@+id/org_img"
+        app:layout_constraintHorizontal_bias="0.411"
+        app:layout_constraintStart_toStartOf="@+id/org_img"
+        app:layout_constraintTop_toTopOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="96dp"
+        android:layout_height="64dp"
+        android:text="Medicine Registration"
+        android:textColor="@android:color/white"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/transport_img"
+        app:layout_constraintHorizontal_bias="0.263"
+        app:layout_constraintStart_toStartOf="@+id/transport_img"
+        app:layout_constraintTop_toBottomOf="@+id/transport_img"
+        app:layout_constraintVertical_bias="0.515" />
+
+    <ImageView
+        android:id="@+id/doctor_img"
+        android:layout_width="83dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/org_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/org_img"
+        app:layout_constraintTop_toTopOf="@+id/org_img"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/doctor_reg_icon" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="105dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:singleLine="false"
+        android:text="Doctor Registration"
+        android:textColor="@android:color/white"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.578"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toTopOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="111dp"
+        android:layout_height="0dp"
+        android:singleLine="false"
+        android:text="Medicine Info Scanner"
+        android:textColor="@android:color/white"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="@+id/textView9"
+        app:layout_constraintHorizontal_bias="0.314"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toTopOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/farmer_img"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/transport_img"
+        app:layout_constraintEnd_toEndOf="@+id/org_img"
+        app:layout_constraintStart_toStartOf="@+id/org_img"
+        app:layout_constraintTop_toTopOf="@+id/transport_img"
+        app:srcCompat="@drawable/medicine_scanner_icon" />
+
+    <ImageView
+        android:id="@+id/doctor_appointment_img"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/farmer_img"
+        app:layout_constraintEnd_toEndOf="@+id/doctor_img"
+        app:layout_constraintStart_toStartOf="@+id/doctor_img"
+        app:layout_constraintTop_toTopOf="@+id/farmer_img"
+        app:srcCompat="@drawable/appointment_list_icon" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Doctor Appointment"
+        android:textColor="@android:color/white"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView20"
+        app:layout_constraintEnd_toEndOf="@+id/textView25"
+        app:layout_constraintHorizontal_bias="0.384"
+        app:layout_constraintStart_toStartOf="@+id/textView25"
+        app:layout_constraintTop_toTopOf="@+id/textView20"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/doctor_viewer_img"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="24dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="@+id/transport_img"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/transport_img"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:srcCompat="@drawable/checkin_img" />
+</android.support.constraint.ConstraintLayout>

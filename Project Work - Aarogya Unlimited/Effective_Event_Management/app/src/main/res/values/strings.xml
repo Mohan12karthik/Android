@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Health Hero</string>
+    <string name="title_activity_doctor_appointments_view">DoctorAppointmentsView</string>
+</resources>

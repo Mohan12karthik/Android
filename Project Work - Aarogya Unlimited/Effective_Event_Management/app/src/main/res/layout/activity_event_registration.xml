@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".EventRegistration">
+
+<EditText
+    android:id="@+id/medicine_name"
+    android:layout_width="199dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginRight="8dp"
+    android:ems="10"
+    android:hint="Event Name"
+    android:inputType="textPersonName"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="1.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<EditText
+    android:id="@+id/medicine_manufacturer"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:ems="10"
+    android:hint="Event Theme/Topic"
+    android:inputType="textPersonName"
+    app:layout_constraintEnd_toEndOf="@+id/medicine_name"
+    app:layout_constraintHorizontal_bias="0.526"
+    app:layout_constraintStart_toStartOf="@+id/medicine_name"
+    app:layout_constraintTop_toBottomOf="@+id/medicine_name" />
+
+<EditText
+    android:id="@+id/medicine_prescription"
+    android:layout_width="158dp"
+    android:layout_height="48dp"
+    android:layout_marginTop="60dp"
+    android:ems="10"
+    android:hint="Date of Event"
+    android:inputType="date"
+    app:layout_constraintStart_toStartOf="@+id/event_id"
+    app:layout_constraintTop_toBottomOf="@+id/medicine_manufacturer" />
+
+<EditText
+    android:id="@+id/event_from_time_edittext"
+    android:layout_width="76dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginLeft="8dp"
+    android:ems="10"
+    android:hint="From"
+    android:inputType="time"
+    app:layout_constraintBottom_toBottomOf="@+id/medicine_prescription"
+    app:layout_constraintStart_toStartOf="@+id/medicine_price"
+    app:layout_constraintTop_toTopOf="@+id/medicine_prescription"
+    app:layout_constraintVertical_bias="0.0" />
+
+<EditText
+    android:id="@+id/event_mem1_name"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:ems="10"
+    android:hint="Member 1 Name"
+    android:inputType="textPersonName"
+    app:layout_constraintEnd_toEndOf="@+id/event_head_name"
+    app:layout_constraintHorizontal_bias="1.0"
+    app:layout_constraintStart_toStartOf="@+id/medicine_prescription"
+    app:layout_constraintTop_toBottomOf="@+id/event_head_name" />
+
+<EditText
+    android:id="@+id/event_mem1_phone"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:ems="10"
+    android:hint="Member 1 Phone"
+    android:inputType="phone"
+    app:layout_constraintBottom_toBottomOf="@+id/event_mem1_name"
+    app:layout_constraintEnd_toEndOf="@+id/event_head_phone"
+    app:layout_constraintStart_toStartOf="@+id/event_head_phone"
+    app:layout_constraintTop_toTopOf="@+id/event_mem1_name" />
+
+<EditText
+    android:id="@+id/event_member2_phonenum"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:ems="10"
+    android:inputType="phone"
+    app:layout_constraintBottom_toBottomOf="@+id/event_mem2_name"
+    app:layout_constraintEnd_toEndOf="@+id/event_mem1_phone"
+    app:layout_constraintStart_toStartOf="@+id/event_mem1_phone"
+    app:layout_constraintTop_toTopOf="@+id/event_mem2_name" />
+
+<EditText
+    android:id="@+id/event_mem2_name"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:ems="10"
+    android:hint="Member 2 Name"
+    android:inputType="textPersonName"
+    app:layout_constraintEnd_toEndOf="@+id/event_mem1_name"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="@+id/event_mem1_name"
+    app:layout_constraintTop_toBottomOf="@+id/event_mem1_name" />
+
+<EditText
+    android:id="@+id/event_head_name"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:ems="10"
+    android:hint="Event Head Name"
+    android:inputType="textPersonName"
+    app:layout_constraintEnd_toEndOf="@+id/medicine_description"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="@+id/medicine_prescription"
+    app:layout_constraintTop_toBottomOf="@+id/medicine_description" />
+
+<EditText
+    android:id="@+id/event_head_phone"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:ems="10"
+    android:hint="Event Head Phone"
+    android:inputType="phone"
+    app:layout_constraintBottom_toBottomOf="@+id/event_head_name"
+    app:layout_constraintEnd_toEndOf="@+id/event_team_type_spinner"
+    app:layout_constraintStart_toStartOf="@+id/event_team_type_spinner"
+    app:layout_constraintTop_toTopOf="@+id/event_head_name" />
+
+<EditText
+    android:id="@+id/medicine_description"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:ems="10"
+    android:hint="Event Location"
+    android:inputType="textPersonName"
+    app:layout_constraintEnd_toEndOf="@+id/medicine_prescription"
+    app:layout_constraintStart_toStartOf="@+id/medicine_prescription"
+    app:layout_constraintTop_toBottomOf="@+id/medicine_prescription" />
+
+    <ImageView
+        android:id="@+id/medicine_imageview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/medicine_manufacturer"
+        app:layout_constraintEnd_toStartOf="@+id/medicine_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/medicine_name"
+        app:srcCompat="@drawable/load_image_icon" />
+
+<TextView
+    android:id="@+id/register_medicine_txt"
+    android:layout_width="157dp"
+    android:layout_height="0dp"
+    android:layout_marginBottom="8dp"
+    android:layout_marginTop="32dp"
+    android:background="@android:color/holo_red_dark"
+    android:gravity="center_vertical|center_horizontal"
+    android:text="REGISTER"
+    android:textAppearance="@style/TextAppearance.AppCompat.Button"
+    android:textColor="@android:color/white"
+    android:textSize="26sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="@+id/event_mem2_phonenumber"
+    app:layout_constraintHorizontal_bias="1.0"
+    app:layout_constraintStart_toStartOf="@+id/event_mem2_name"
+    app:layout_constraintTop_toBottomOf="@+id/event_mem2_name"
+    app:layout_constraintVertical_bias="0.0" />
+
+<EditText
+    android:id="@+id/event_mem2_phonenumber"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:ems="10"
+    android:hint="Member 2 Phone"
+    android:inputType="phone"
+    app:layout_constraintBottom_toBottomOf="@+id/event_mem2_name"
+    app:layout_constraintEnd_toEndOf="@+id/event_mem1_phone"
+    app:layout_constraintStart_toStartOf="@+id/event_mem1_phone"
+    app:layout_constraintTop_toTopOf="@+id/event_mem2_name" />
+
+<Spinner
+    android:id="@+id/event_team_type_spinner"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    app:layout_constraintBottom_toBottomOf="@+id/medicine_description"
+    app:layout_constraintEnd_toEndOf="@+id/event_to_time_edittext"
+    app:layout_constraintHorizontal_bias="0.6"
+    app:layout_constraintStart_toStartOf="@+id/event_from_time_edittext"
+    app:layout_constraintTop_toTopOf="@+id/medicine_description" />
+
+<Spinner
+    android:id="@+id/event_price_spinner"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    app:layout_constraintBottom_toTopOf="@+id/register_medicine_txt"
+    app:layout_constraintEnd_toEndOf="@+id/event_mem2_name"
+    app:layout_constraintHorizontal_bias="1.0"
+    app:layout_constraintStart_toStartOf="@+id/event_mem2_name"
+    app:layout_constraintTop_toBottomOf="@+id/event_mem2_name"
+    app:layout_constraintVertical_bias="0.0" />
+
+<EditText
+    android:id="@+id/event_price"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:layout_marginBottom="8dp"
+    android:layout_marginTop="8dp"
+    android:ems="10"
+    android:hint="Input Event Price"
+    android:inputType="numberDecimal"
+    android:textSize="14sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="@+id/event_price_spinner"
+    app:layout_constraintStart_toStartOf="@+id/event_price_spinner"
+    app:layout_constraintTop_toBottomOf="@+id/event_price_spinner" />
+
+<EditText
+    android:id="@+id/event_to_time_edittext"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginLeft="16dp"
+    android:ems="10"
+    android:hint="To"
+    android:inputType="time"
+    app:layout_constraintBottom_toBottomOf="@+id/event_from_time_edittext"
+    app:layout_constraintEnd_toEndOf="@+id/medicine_manufacturer"
+    app:layout_constraintHorizontal_bias="1.0"
+    app:layout_constraintStart_toEndOf="@+id/event_from_time_edittext"
+    app:layout_constraintTop_toTopOf="@+id/event_from_time_edittext" />
+
+<EditText
+    android:id="@+id/event_id"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    android:ems="10"
+    android:hint="Event ID"
+    android:inputType="textPersonName"
+    android:singleLine="false"
+    android:textSize="18sp"
+    app:layout_constraintBottom_toTopOf="@+id/medicine_prescription"
+    app:layout_constraintEnd_toEndOf="@+id/medicine_imageview"
+    app:layout_constraintStart_toStartOf="@+id/medicine_imageview"
+    app:layout_constraintTop_toBottomOf="@+id/medicine_manufacturer" />
+
+<EditText
+    android:id="@+id/medicine_price"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:ems="10"
+    android:hint="Event Organizer Name"
+    android:inputType="textPersonName"
+    app:layout_constraintBottom_toBottomOf="@+id/event_id"
+    app:layout_constraintEnd_toEndOf="@+id/medicine_manufacturer"
+    app:layout_constraintHorizontal_bias="1.0"
+    app:layout_constraintStart_toStartOf="@+id/medicine_manufacturer"
+    app:layout_constraintTop_toTopOf="@+id/event_id" />
+
+</android.support.constraint.ConstraintLayout>

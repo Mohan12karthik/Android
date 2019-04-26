@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ericjoseph.com.exaltproject.OrganizationRegistration">
+
+    <EditText
+        android:id="@+id/pharmacy_name"
+        android:layout_width="0dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:hint="Enter organization name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/org_imageview"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/pharmacy_address"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Enter organization address"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        app:layout_constraintEnd_toEndOf="@+id/pharmacy_name"
+        app:layout_constraintStart_toStartOf="@+id/pharmacy_name"
+        app:layout_constraintTop_toBottomOf="@+id/pharmacy_name" />
+
+    <EditText
+        android:id="@+id/pharmacy_id"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Member 1 name"
+        android:inputType="textPersonName"
+        android:singleLine="false"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/org_imageview"
+        app:layout_constraintTop_toBottomOf="@+id/pharmacy_address" />
+
+    <EditText
+        android:id="@+id/pharmacy_phone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:hint="Member 1 Phone"
+        android:inputType="phone"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/pharmacy_address"
+        app:layout_constraintStart_toEndOf="@+id/pharmacy_id"
+        app:layout_constraintTop_toTopOf="@+id/pharmacy_id" />
+
+    <EditText
+        android:id="@+id/org_mem1_email"
+        android:layout_width="0dp"
+        android:layout_height="38dp"
+        android:ems="10"
+        android:hint="Member 1 eMail"
+        android:inputType="textWebEmailAddress"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/pharmacy_id"
+        app:layout_constraintEnd_toEndOf="@+id/pharmacy_phone"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/pharmacy_phone"
+        app:layout_constraintTop_toBottomOf="@+id/pharmacy_phone"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/org_mem2_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:hint="Memebr 2 name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/pharmacy_id"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/pharmacy_id"
+        app:layout_constraintTop_toBottomOf="@+id/pharmacy_id" />
+
+    <EditText
+        android:id="@+id/org_mem2_phone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Memebr 2 Phone"
+        android:inputType="phone"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/pharmacy_phone"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/pharmacy_phone"
+        app:layout_constraintTop_toTopOf="@+id/org_mem2_name" />
+
+    <EditText
+        android:id="@+id/org_mem2_email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Memebr 2 eMail"
+        android:inputType="textWebEmailAddress"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/org_mem2_name"
+        app:layout_constraintEnd_toEndOf="@+id/org_mem2_phone"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/org_mem2_phone"
+        app:layout_constraintTop_toBottomOf="@+id/org_mem2_phone"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/org_mem3_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:hint="Member 3 name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/org_mem2_name"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/org_mem2_name"
+        app:layout_constraintTop_toBottomOf="@+id/org_mem2_name" />
+
+    <EditText
+        android:id="@+id/org_mem3_phone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Member 3 Phone"
+        android:inputType="phone"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/org_mem2_phone"
+        app:layout_constraintStart_toStartOf="@+id/org_mem2_phone"
+        app:layout_constraintTop_toTopOf="@+id/org_mem3_name" />
+
+    <EditText
+        android:id="@+id/org_mem3_email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Member 3 eMail"
+        android:inputType="textWebEmailAddress"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/org_mem3_name"
+        app:layout_constraintEnd_toEndOf="@+id/org_mem3_phone"
+        app:layout_constraintHorizontal_bias="0.469"
+        app:layout_constraintStart_toStartOf="@+id/org_mem3_phone"
+        app:layout_constraintTop_toBottomOf="@+id/org_mem3_phone"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/register_org"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:background="?attr/colorControlActivated"
+        android:gravity="center_vertical|center_horizontal"
+        android:lineSpacingExtra="12sp"
+        android:text="CLICK TO REGISTER"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/org_mem3_email"
+        app:layout_constraintStart_toStartOf="@+id/org_mem3_name"
+        app:layout_constraintTop_toBottomOf="@+id/org_mem3_email" />
+
+    <ImageView
+        android:id="@+id/org_imageview"
+        android:layout_width="0dp"
+        android:layout_height="97dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="250dp"
+        android:layout_marginRight="250dp"
+        android:layout_marginBottom="36dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/pharmacy_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/load_image_icon" />
+</android.support.constraint.ConstraintLayout>

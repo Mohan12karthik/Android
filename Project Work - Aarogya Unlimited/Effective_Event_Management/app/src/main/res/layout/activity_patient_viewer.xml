@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PatientViewerActivity">
+
+    <TextView
+        android:id="@+id/patient_name_textview"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:hint="Patient name"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/medicine_imageview"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/patient_userid_textview"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:hint="Patient User ID"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/medicine_imageview"
+        app:layout_constraintEnd_toEndOf="@+id/patient_name_textview"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/patient_name_textview"
+        app:layout_constraintTop_toBottomOf="@+id/patient_name_textview"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/prev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="8dp"
+        android:singleLine="false"
+        android:text="Previous"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/doctor_work_address_textview" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="64dp"
+        android:layout_height="43dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:singleLine="false"
+        android:text="Next"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/prev"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.907"
+        app:layout_constraintStart_toEndOf="@+id/prev"
+        app:layout_constraintTop_toTopOf="@+id/prev"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/patient_phone_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Patient Phone number"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/medicine_imageview"
+        app:layout_constraintTop_toBottomOf="@+id/doctor_specialization_textview" />
+
+    <TextView
+        android:id="@+id/doctor_email_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Patient Email ID"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/patient_phone_textview"
+        app:layout_constraintTop_toBottomOf="@+id/patient_phone_textview" />
+
+    <TextView
+        android:id="@+id/doctor_clinic_name_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Patient Address"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/patient_phone_textview"
+        app:layout_constraintTop_toBottomOf="@+id/doctor_email_textview" />
+
+    <TextView
+        android:id="@+id/doctor_work_address_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:hint="Patient Ailment"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/doctor_clinic_name_textview"
+        app:layout_constraintTop_toBottomOf="@+id/doctor_clinic_name_textview" />
+
+    <TextView
+        android:id="@+id/doctor_specialization_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Patient DOB"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/doctor_city_textview"
+        app:layout_constraintTop_toBottomOf="@+id/doctor_city_textview" />
+
+    <ImageView
+        android:id="@+id/medicine_imageview"
+        android:layout_width="127dp"
+        android:layout_height="114dp"
+        android:layout_marginStart="16dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/patient_name_textview"
+        app:srcCompat="@android:color/holo_blue_dark" />
+
+    <TextView
+        android:id="@+id/doctor_city_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:hint="Patient Blood Type"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/patient_phone_textview"
+        app:layout_constraintTop_toBottomOf="@+id/doctor_password_textview" />
+
+    <TextView
+        android:id="@+id/doctor_password_textview"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Patient Password"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/patient_name_textview"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/patient_userid_textview"
+        app:layout_constraintTop_toBottomOf="@+id/patient_userid_textview" />
+
+    <EditText
+        android:id="@+id/patient_searchbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:hint="Enter patient name to search"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/patient_name_textview"
+        app:layout_constraintEnd_toEndOf="@+id/patient_name_textview"
+        app:layout_constraintStart_toStartOf="@+id/medicine_imageview"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/patient_searchbutton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/search_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/patient_searchbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/patient_searchbar"
+        app:layout_constraintTop_toTopOf="@+id/patient_searchbar" /><![CDATA[
+
+    "
+    android:hint="event_location_textview"
+    app:layout_c
+    Bottom_toTopOf="@+id/headnametextview"
+    app:layout_c
+    Start_toStartOf="@+id/event_imageview"
+    app:layout_constrai />
+]]>
+</android.support.constraint.ConstraintLayout>

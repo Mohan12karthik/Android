@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MedicineRegistration">
+
+    <EditText
+        android:id="@+id/medicine_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:hint="Enter Medicine Name"
+        android:inputType="textMultiLine|textImeMultiLine"
+        android:singleLine="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/medicine_imageview"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/medicine_manufacturer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Enter Medicine Manufacturer Name"
+        android:inputType="textMultiLine|textImeMultiLine"
+        android:singleLine="false"
+        app:layout_constraintEnd_toEndOf="@+id/medicine_name"
+        app:layout_constraintStart_toStartOf="@+id/medicine_name"
+        app:layout_constraintTop_toBottomOf="@+id/medicine_name" />
+
+    <EditText
+        android:id="@+id/medicine_prescription"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:ems="10"
+        android:hint="Enter Prescription"
+        android:inputType="textMultiLine|textImeMultiLine"
+        android:singleLine="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/medicine_price"
+        app:layout_constraintTop_toBottomOf="@+id/medicine_price" />
+
+    <EditText
+        android:id="@+id/medicine_description"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:hint="Enter other important details"
+        android:inputType="textMultiLine|textImeMultiLine"
+        android:singleLine="false"
+        app:layout_constraintBottom_toTopOf="@+id/register_medicine_txt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/medicine_prescription"
+        app:layout_constraintTop_toBottomOf="@+id/medicine_prescription" />
+
+    <ImageView
+        android:id="@+id/medicine_imageview"
+        android:layout_width="127dp"
+        android:layout_height="106dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toStartOf="@+id/medicine_name"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/medicine_name"
+        app:srcCompat="@drawable/load_image_icon" />
+
+    <TextView
+        android:id="@+id/register_medicine_txt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/holo_red_dark"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="Register Medicine"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/medicine_description" />
+
+    <EditText
+        android:id="@+id/medicine_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:hint="Enter Medicine Price"
+        android:inputType="number"
+        android:singleLine="false"
+        app:layout_constraintBottom_toTopOf="@+id/medicine_prescription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/medicine_imageview"
+        app:layout_constraintTop_toBottomOf="@+id/medicine_quantity"
+        app:layout_constraintVertical_bias="0.535"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <EditText
+        android:id="@+id/medicine_quantity"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:ems="10"
+        android:hint="Enter Medicine Quantity"
+        android:inputType="textMultiLine|textImeMultiLine"
+        android:singleLine="false"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/medicine_imageview"
+        app:layout_constraintTop_toBottomOf="@+id/medicine_manufacturer" />
+
+</android.support.constraint.ConstraintLayout>

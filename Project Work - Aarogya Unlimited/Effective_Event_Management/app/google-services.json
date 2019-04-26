@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "403950910995",
+    "firebase_url": "https://effectiveeventmanagement.firebaseio.com",
+    "project_id": "effectiveeventmanagement",
+    "storage_bucket": "effectiveeventmanagement.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:403950910995:android:228630e6dff38bde",
+        "android_client_info": {
+          "package_name": "ericjoseph.com.exaltproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "403950910995-7nodja255b05lv7fpg6ph4c4hgf4pvv0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ericjoseph.com.exaltproject",
+            "certificate_hash": "d54dfc197a0afd2b7c1c7d05246220ebda57768f"
+          }
+        },
+        {
+          "client_id": "403950910995-kq0rfqj6ipfjqp5j0v51k1gpds79fom7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDroxXVenHV3yAcPn4BHWXKKAyERi40yU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "403950910995-kq0rfqj6ipfjqp5j0v51k1gpds79fom7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

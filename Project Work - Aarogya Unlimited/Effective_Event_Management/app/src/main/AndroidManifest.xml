@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ericjoseph.com.exaltproject">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/heart_beat_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".PatientRegistration" />
+        <activity android:name=".OrganizationRegistration" />
+        <activity android:name=".DoctorRegistration" />
+        <activity android:name=".DoctorViewerActivity" />
+        <activity android:name=".PatientViewerActivity" />
+        <activity android:name=".DoctorAppointment" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity android:name=".ParticipationConfirmation" />
+        <activity android:name=".EventDashboard" />
+        <activity android:name=".ScanActivity" />
+        <activity android:name=".CheckInQRCode" />
+        <activity android:name=".DoctorAppointmentsConfirmation" />
+        <activity android:name=".BuyMedicinePage" />
+        <activity android:name=".MedicineRegistration" />
+        <activity android:name=".PharmacyRegistration" />
+        <activity android:name=".PharmacyViewer" />
+        <activity android:name=".DoctorAppointmentsViewer" />
+        <activity android:name=".AppointmentActionSelector"></activity>
+    </application>
+
+</manifest>

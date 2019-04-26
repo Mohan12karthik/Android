@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BuyMedicinePage">
+
+
+    <TextView
+        android:id="@+id/buy_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="60dp"
+        android:text="Quantity (number of tablets):"
+        app:layout_constraintStart_toStartOf="@+id/med_img"
+        app:layout_constraintTop_toBottomOf="@+id/med_img"
+        tools:layout_conversion_absoluteHeight="19dp"
+        tools:layout_conversion_absoluteWidth="183dp" />
+
+    <Button
+        android:id="@+id/increase"
+        android:layout_width="49dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:onClick="increment"
+        android:text="+"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/decrease"
+        app:layout_constraintEnd_toEndOf="@+id/buy_quantity"
+        app:layout_constraintTop_toTopOf="@+id/decrease"
+        tools:layout_conversion_absoluteHeight="48dp"
+        tools:layout_conversion_absoluteWidth="48dp" />
+
+    <TextView
+        android:id="@+id/quantity_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="0"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/decrease"
+        app:layout_constraintEnd_toStartOf="@+id/increase"
+        app:layout_constraintStart_toEndOf="@+id/decrease"
+        app:layout_constraintTop_toTopOf="@+id/decrease"
+        tools:layout_conversion_absoluteHeight="21dp"
+        tools:layout_conversion_absoluteWidth="9dp" />
+
+    <Button
+        android:id="@+id/decrease"
+        android:layout_width="46dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:onClick="decrement"
+        android:text="-"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/buy_quantity"
+        app:layout_constraintTop_toBottomOf="@+id/buy_quantity"
+        tools:layout_conversion_absoluteHeight="48dp"
+        tools:layout_conversion_absoluteWidth="48dp" />
+
+    <TextView
+        android:id="@+id/buy_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.23"
+        app:layout_constraintStart_toEndOf="@+id/buy_quantity"
+        app:layout_constraintTop_toTopOf="@+id/buy_quantity"
+        tools:layout_conversion_absoluteHeight="19dp"
+        tools:layout_conversion_absoluteWidth="35dp" />
+
+    <TextView
+        android:id="@+id/amount"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:hint="Price value"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/increase"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/buy_price"
+        app:layout_constraintTop_toTopOf="@+id/increase"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_conversion_absoluteHeight="19dp"
+        tools:layout_conversion_absoluteWidth="0dp" />
+
+    <ImageView
+        android:id="@+id/med_img"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="370dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/crocin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/medName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_conversion_absoluteHeight="100dp"
+        tools:layout_conversion_absoluteWidth="117dp" />
+
+    <TextView
+        android:id="@+id/medName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="170dp"
+        android:layout_marginLeft="170dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:hint="Medicine name"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.592"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/med_img"
+        tools:layout_conversion_absoluteHeight="25dp"
+        tools:layout_conversion_absoluteWidth="151dp" />
+
+    <TextView
+        android:id="@+id/manu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:hint="Medicine manufacturer"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        app:layout_constraintEnd_toEndOf="@+id/medName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/medName"
+        app:layout_constraintTop_toBottomOf="@+id/medName"
+        tools:layout_conversion_absoluteHeight="19dp"
+        tools:layout_conversion_absoluteWidth="147dp" />
+
+    <TextView
+        android:id="@+id/med_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Medicine Quantity"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
+        android:textColor="#B71C1C"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/manu"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/manu"
+        app:layout_constraintTop_toBottomOf="@+id/manu"
+        tools:layout_conversion_absoluteHeight="19dp"
+        tools:layout_conversion_absoluteWidth="114dp" />
+
+    <TextView
+        android:id="@+id/med_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:hint="Price ₹"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/med_img"
+        app:layout_constraintEnd_toEndOf="@+id/manu"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/med_quantity"
+        app:layout_constraintTop_toBottomOf="@+id/med_quantity"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_conversion_absoluteHeight="19dp"
+        tools:layout_conversion_absoluteWidth="43dp" />
+
+    <TextView
+        android:id="@+id/descript"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="48dp"
+        android:hint="Description :"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/buy_quantity"
+        app:layout_constraintTop_toBottomOf="@+id/decrease"
+        tools:layout_conversion_absoluteHeight="19dp"
+        tools:layout_conversion_absoluteWidth="79dp" />
+
+    <TextView
+        android:id="@+id/use"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:hint="Prescribtion  for :"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/descript"
+        app:layout_constraintTop_toBottomOf="@+id/descript"
+        tools:layout_conversion_absoluteHeight="19dp"
+        tools:layout_conversion_absoluteWidth="108dp" />
+
+</android.support.constraint.ConstraintLayout>
